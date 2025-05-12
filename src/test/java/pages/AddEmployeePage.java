@@ -21,11 +21,11 @@ public class AddEmployeePage extends CommonMethods {
     @FindBy(xpath = "//a[text()='Personal Details']")
     public WebElement saveSuccess;
 
-    @FindBy(xpath = "//span[contains(text(),'Required')]")
-    public WebElement errorMsg;
-
     @FindBy(id = "employeeId")
     public WebElement getEmployeeId;
+
+    @FindBy(xpath = "//span[contains(text(),'Required')]")
+    public WebElement errorMsg;
 
     public AddEmployeePage(){
         PageFactory.initElements(driver,this);

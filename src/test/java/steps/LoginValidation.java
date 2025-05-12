@@ -68,4 +68,9 @@ public class LoginValidation extends CommonMethods {
     public void loginErrorMessageWillBeDisplayed() {
         Assert.assertEquals("Username cannot be empty",loginPage.loginErrorMessage.getText());
     }
+
+    @Then("error message will be displayed")
+    public void errorMessageWillBeDisplayed() {
+        Assert.assertEquals("Username cannot be empty",loginPage.loginErrorMessage.getText());
+    }
 }

@@ -88,11 +88,6 @@ public class AddEmployee extends CommonMethods {
         sendText("Jenkins", addEmployeePage.lastNameLocator);
     }
 
-    @Then("error message will be displayed")
-    public void errorMessageWillBeDisplayed() {
-
-    }
-
     @When("user enters {string} and {string} and {string}")
     public void userEntersAndAnd(String fn, String mn, String ln) {
         sendText(fn,addEmployeePage.firstNameLocator);
